@@ -1,0 +1,82 @@
+.about__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about__collage {
+  max-width: 600px;
+}
+
+.about__right {
+  max-width: 500px;
+}
+
+.about__title {
+  margin-bottom: 60px;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about__text {
+  margin-bottom: 36px;
+  width: 500px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.about__text:last-child {
+  margin-bottom: 59px;
+}
+
+.about__cite {
+  margin-left: 31px;
+}
+
+.about__cite-text {
+  position: relative;
+  margin-bottom: 39px;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.about__cite-text::before {
+  content: "“";
+  position: absolute;
+  top: -15px;
+  left: -30px;
+  font-weight: 900;
+  font-size: 44px;
+  color: #6c0287;
+}
+
+.about__quote {
+  font-weight: 900;
+  font-size: 44px;
+  color: #6c0287;
+}
+
+.about__author {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-left: 80px;
+}
+
+.about__author-text {
+  width: 279px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.about__collage {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,33 @@
+.head__container {
+  position: relative;
+  padding-bottom: 611px;
+  background-image: url("../img/game-over.svg");
+  background-repeat: repeat-y;
+}
+
+.head__container:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 675px;
+  height: 762px;
+  background-image: url("../img/man.png");
+  z-index: 100;
+}
+
+.head__title {
+  margin-left: -10px;
+  margin-bottom: 32px;
+  font-weight: 900;
+  font-size: 200px;
+  letter-spacing: -0.09em;
+  line-height: 135px;
+  text-transform: uppercase;
+}
+
+.head__subtitle {
+  margin-left: 211px;
+  font-weight: 400;
+  font-size: 28px;
+}
