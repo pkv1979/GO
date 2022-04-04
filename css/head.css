@@ -1,8 +1,9 @@
 .head__container {
   position: relative;
-  padding-bottom: 611px;
-  background-image: url("../img/game-over.svg");
-  background-repeat: repeat-y;
+  height: 823px;
+  /* padding-bottom: 611px; */
+  /* background-image: url("../img/game-over.svg");
+  background-repeat: repeat-y; */
 }
 
 .head__container:after {
@@ -20,14 +21,81 @@
   margin-left: -10px;
   margin-bottom: 32px;
   font-weight: 900;
-  font-size: 200px;
+  font-size: 150px;
   letter-spacing: -0.09em;
   line-height: 135px;
   text-transform: uppercase;
 }
 
 .head__subtitle {
-  margin-left: 211px;
+  margin-left: 88px;
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 28px;
+}
+
+.head__advantages {
+  display: flex;
+  gap: 40px;
+  align-items: flex-end;
+  margin-bottom: 150px;
+}
+
+.head__advantages1,
+.head__advantages2 {
+  text-align: center;
+}
+
+.head__advantages1 {
+  flex-basis: 193px;
+}
+
+.head__advantages2 {
+  flex-basis: 166px;
+}
+
+.head__advantages-count {
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 141px;
+  color: #cd06ff;
+}
+
+.head__advantages-text {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+}
+
+.head__advantages-new {
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 106px;
+  font-variant: small-caps;
+  color: #cd06ff;
+}
+
+.head__link {
+  padding: 25px 69px;
+  font-size: 26px;
+  text-transform: uppercase;
+  background: #6c0287;
+  border-radius: 10px;
+}
+
+.head__link-down {
+  position: absolute;
+  bottom: 90px;
+  left: calc(50% - 48px);
+  display: block;
+  width: 97px;
+  height: 97px;
+  background: url("../img/down.svg") center center no-repeat;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 200;
 }

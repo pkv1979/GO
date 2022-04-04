@@ -10,15 +10,88 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="logo">
+          <a href="#" class="logo__link">
+            <img src="./img/logo.svg" alt="Логотип" class="logo__image" />
+          </a>
+        </div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#halls" class="navigation__link">залы</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#about" class="navigation__link">О нас</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#booking" class="navigation__link">Бронь</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#reviews" class="navigation__link">отзывы</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#contact" class="navigation__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__btn">Заказать звонок</button>
+      </div>
+    </header>
+
     <main class="main">
       <section class="head">
         <div class="container head__container">
           <h1 class="head__title">GAME OVER</h1>
           <p class="head__subtitle">Новый формат игр и отдыха</p>
+          <div class="head__advantages">
+            <div class="head__advantages1">
+              <p class="head__advantages-count">4</p>
+              <p class="head__advantages-text">Тематических зала</p>
+            </div>
+            <div class="head__advantages2">
+              <p class="head__advantages-new">new</p>
+              <p class="head__advantages-text">Новейшая аппаратура</p>
+            </div>
+          </div>
+          <a href="#booking" class="head__link">Забронировать</a>
+          <a href="#promotion" class="head__link-down"></a>
         </div>
       </section>
 
-      <section class="halls">
+      <section id="promotion" class="promotion">
+        <div class="container">
+          <h2 class="promotion__title">
+            У нас есть все для классного<br />
+            отдыха с друзьями!
+          </h2>
+          <ul class="promotion__list">
+            <li class="promotion__item promotion__item_vr">VR очки</li>
+            <li
+              class="promotion__item promotion__item_audio promotion__item_padding-bottom_6"
+            >
+              Аудио-система 5.1 с отличным звуком
+            </li>
+            <li class="promotion__item promotion__item_karaoke">
+              Караоке (4 микрофона)
+            </li>
+            <li class="promotion__item promotion__item_game">
+              Настольные игры
+            </li>
+            <li
+              class="promotion__item promotion__item_film promotion__item_padding-bottom_6"
+            >
+              Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko
+            </li>
+            <li class="promotion__item promotion__item_play-station">
+              РlаyStаtiоn 5
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="halls" class="halls">
         <div class="container">
           <h2 class="halls__title">наши залы</h2>
           <ul class="halls__items">
@@ -35,6 +108,218 @@
               <a href="#" class="halls__link">neon style</a>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section id="booking" class="booking">
+        <div class="container">
+          <h2 class="booking__title">Забронировать зал просто</h2>
+          <form
+            action="https://jsonplaceholder.typicode.com/posts"
+            class="booking__form"
+            method="post"
+          >
+            <fieldset class="booking__fieldset">
+              <legend class="booking__legend">Выбери зал</legend>
+              <input
+                type="radio"
+                name="halls"
+                class="booking__radio-halls visually-hidden"
+                value="vibes"
+                id="vibes"
+              />
+              <label for="vibes" class="booking__halls-label">
+                80’s vibes
+              </label>
+
+              <input
+                type="radio"
+                name="halls"
+                class="booking__radio-halls visually-hidden"
+                value="star-wars"
+                id="star-wars"
+              />
+              <label for="star-wars" class="booking__halls-label">
+                Star wars
+              </label>
+
+              <input
+                type="radio"
+                name="halls"
+                class="booking__radio-halls visually-hidden"
+                value="wild-west"
+                id="wild-west"
+              />
+              <label for="wild-west" class="booking__halls-label">
+                wild west
+              </label>
+
+              <input
+                type="radio"
+                name="halls"
+                class="booking__radio-halls visually-hidden"
+                value="neon-style"
+                id="neon-style"
+              />
+              <label for="neon-style" class="booking__halls-label">
+                neon style
+              </label>
+            </fieldset>
+
+            <fieldset class="booking__fieldset booking__fieldset_gap_100">
+              <legend class="booking__legend">Собери набор развлечений</legend>
+              <div class="booking__form-group">
+                <label class="booking__title-group">Приставка:</label>
+                <label class="booking__console-text">
+                  <input
+                    type="radio"
+                    name="console"
+                    value="PlayStation 5"
+                    class="booking__console-radio"
+                  />
+                  PlayStation 5
+                </label>
+                <label class="booking__console-text">
+                  <input
+                    type="radio"
+                    name="console"
+                    value="Sega Mega Drive"
+                    class="booking__console-radio"
+                  />
+                  Sega Mega Drive
+                </label>
+                <label class="booking__console-text">
+                  <input
+                    type="radio"
+                    name="console"
+                    value="X-box One S"
+                    class="booking__console-radio"
+                  />
+                  X-box One S
+                </label>
+                <label class="booking__console-text">
+                  <input
+                    type="radio"
+                    name="console"
+                    value="Dendy"
+                    class="booking__console-radio"
+                  />
+                  Dendy
+                </label>
+              </div>
+
+              <div class="booking__form-group">
+                <label class="booking__title-group">Настольные игры</label>
+                <label class="booking__console-text">
+                  <input
+                    type="checkbox"
+                    name="console"
+                    value="Jenga"
+                    class="booking__console-radio"
+                  />
+                  Jenga
+                </label>
+                <label class="booking__console-text">
+                  <input
+                    type="checkbox"
+                    name="console"
+                    value="Monopoly"
+                    class="booking__console-radio"
+                  />
+                  Monopoly
+                </label>
+                <label class="booking__console-text">
+                  <input
+                    type="checkbox"
+                    name="console"
+                    value="Manchkin"
+                    class="booking__console-radio"
+                  />
+                  Манчкин
+                </label>
+                <label class="booking__console-text">
+                  <input
+                    type="checkbox"
+                    name="console"
+                    value="Alias"
+                    class="booking__console-radio"
+                  />
+                  Alias
+                </label>
+              </div>
+
+              <div class="booking__form-group">
+                <label class="booking__title-group">Дополнительно</label>
+                <label class="booking__console-text">
+                  <input
+                    type="checkbox"
+                    name="console"
+                    value="Karaoke"
+                    class="booking__console-radio"
+                  />
+                  Караоке
+                </label>
+                <label class="booking__console-text">
+                  <input
+                    type="checkbox"
+                    name="console"
+                    value="VR"
+                    class="booking__console-radio"
+                  />
+                  VR
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="booking__fieldset booking__fieldset_gap_50">
+              <legend class="booking__legend">Выбери дату и время</legend>
+              <div
+                class="booking__form-group booking__form-group_flex booking__form-group_padding_top"
+              >
+                <select name="date" class="booking__select">
+                  <option class="booking__option" value="">Дата</option>
+                </select>
+                <select name="time" class="booking__select">
+                  <option class="booking__option" value="">Время</option>
+                </select>
+
+                <select
+                  name="count"
+                  class="booking__select booking__select_width_100"
+                >
+                  <option class="booking__option" value="">
+                    Сколько человек
+                  </option>
+                </select>
+              </div>
+              <div class="booking__form-group">
+                <div class="booking__input-group">
+                  <label for="name" class="booking__input-label">Имя</label>
+                  <input id="name" type="text" class="booking__input" />
+                </div>
+                <div class="booking__input-group">
+                  <label for="surname" class="booking__input-label"
+                    >Фамилия</label
+                  >
+                  <input id="surname" type="text" class="booking__input" />
+                </div>
+              </div>
+              <div class="booking__form-group">
+                <div class="booking__input-group">
+                  <label for="phone" class="booking__input-label"
+                    >Телефон</label
+                  >
+                  <input id="phone" type="tel" class="booking__input" />
+                </div>
+                <div class="booking__input-group">
+                  <label for="mail" class="booking__input-label">E-mail</label>
+                  <input id="mail" type="email" class="booking__input" />
+                </div>
+              </div>
+            </fieldset>
+
+            <button type="submit" class="booking__btn">Забронировать</button>
+          </form>
         </div>
       </section>
 
@@ -157,57 +442,71 @@
       <section class="contacts">
         <div class="container">
           <h2 class="contacts__title">контакты</h2>
-          <ul class="contacts__items">
-            <li class="contacts__item contacts__item_adress">
-              г. Москва <br />
-              ул. Аквамарина, 16
-            </li>
-            <li class="contacts__item contacts__item_phone">
-              <a href="tel:89509302893" class="contacts__link"
-                >8 (950) 930 - 28 - 93</a
-              >
-            </li>
-            <li class="contacts__item contacts__item_email">
-              <a href="mailto:GameOver@gmail.com" class="contacts__link"
-                >GameOver@gmail.com</a
-              >
-            </li>
-          </ul>
-          <div class="socials">
-            <ul class="socials__items">
-              <li class="socials__item">
-                <a href="#" class="socials__link">
-                  <img
-                    src="./img/instagram.svg"
-                    alt="instagram"
-                    class="social-img"
-                  />
-                </a>
-              </li>
-              <li class="socials__item">
-                <a href="#" class="socials__link">
-                  <img src="./img/vk.svg" alt="vk" class="socials__img" />
-                </a>
-              </li>
-              <li class="socials__item">
-                <a href="#" class="socials__link">
-                  <img
-                    src="./img/facebook.svg"
-                    alt="facebook"
-                    class="social-img"
-                  />
-                </a>
-              </li>
-              <li class="socials__item">
-                <a href="#" class="socials__link">
-                  <img
-                    src="./img/telegram.svg"
-                    alt="telegram"
-                    class="social-img"
-                  />
-                </a>
-              </li>
-            </ul>
+          <div class="contacts__container">
+            <div class="contacts__left-side">
+              <ul class="contacts__items">
+                <li class="contacts__item contacts__item_adress">
+                  г. Москва <br />
+                  ул. Аквамарина, 16
+                </li>
+                <li class="contacts__item contacts__item_phone">
+                  <a href="tel:89509302893" class="contacts__link"
+                    >8 (950) 930 - 28 - 93</a
+                  >
+                </li>
+                <li class="contacts__item contacts__item_email">
+                  <a href="mailto:GameOver@gmail.com" class="contacts__link"
+                    >GameOver@gmail.com</a
+                  >
+                </li>
+              </ul>
+              <div class="socials">
+                <ul class="socials__items">
+                  <li class="socials__item">
+                    <a href="#" class="socials__link">
+                      <img
+                        src="./img/instagram.svg"
+                        alt="instagram"
+                        class="social-img"
+                      />
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link">
+                      <img src="./img/vk.svg" alt="vk" class="socials__img" />
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link">
+                      <img
+                        src="./img/facebook.svg"
+                        alt="facebook"
+                        class="social-img"
+                      />
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link">
+                      <img
+                        src="./img/telegram.svg"
+                        alt="telegram"
+                        class="social-img"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <img src="./img/map.jpg" alt="карта" class="contacts__map" />
+          </div>
+
+          <div class="contacts__copyright">
+            <p class="contacts__text">© Game Over, 2022</p>
+            <div class="contacts__author">
+              <p class="contacts__text">Design by Anastasia Ilina</p>
+              <p class="contacts__text">ilina9825@gmail.com</p>
+            </div>
           </div>
         </div>
       </section>

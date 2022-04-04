@@ -1,4 +1,5 @@
 .contacts {
+  padding-bottom: 20px;
   background-image: linear-gradient(180deg, #1b1a1b -13.35%, #370a37 86.65%);
 }
 
@@ -7,6 +8,13 @@
   font-size: 40px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.contacts__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 146px;
 }
 
 .contacts__items {
@@ -45,4 +53,16 @@
 .social__img {
   width: 50px;
   height: 50px;
+}
+
+.contacts__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contacts__text {
+  margin-bottom: 6px;
+  font-weight: 400;
+  font-size: 14px;
 }

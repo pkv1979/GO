@@ -1,0 +1,25 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header__btn {
+  padding: 12px 32px;
+  font-size: 22px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 3px solid #cd06ff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
