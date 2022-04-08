@@ -51,9 +51,18 @@
   cursor: pointer;
 }
 
-.booking__radio-halls:checked + .booking__halls-label {
-  background-color: #000000;
-  color: #ffffff;
+.booking__halls-label:hover {
+  background-color: #eadeed;
+  border: 3px solid #640aa3;
+}
+
+.booking__radio-halls:checked + .booking__halls-label,
+.booking__radio-halls:active + .booking__halls-label {
+  background-color: #eadeed;
+}
+
+.booking__radio-label:focus + .booking__halls-label {
+  border: 3px solid #640aa3;
 }
 
 .booking__form-group {
@@ -72,6 +81,19 @@
   font-size: 22px;
 }
 
+.booking__console-radio:focus {
+  outline: 1px solid #cd06ff;
+}
+
+.booking__console-check:focus {
+  outline: 1px solid #cd06ff;
+}
+
+.booking__select:focus,
+.booking__input:focus {
+  outline: 2px solid #cd06ff;
+}
+
 .booking__btn {
   display: block;
   margin-left: auto;
@@ -80,8 +102,23 @@
   text-transform: uppercase;
   color: #6c0287;
   background: #ffffff;
+  border: 3px solid #ffffff;
   border-radius: 10px;
   outline: none;
+}
+
+.booking__btn:hover {
+  background: #eadeed;
+  border: 3px solid #6c0287;
+}
+
+.booking__btn:active {
+  background: #eadeed;
+  border: 3px solid #eadeed;
+}
+
+.booking__btn:focus {
+  border: 3px solid #6c0287;
 }
 
 .booking__form-group_flex {

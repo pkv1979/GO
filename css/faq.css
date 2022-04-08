@@ -28,11 +28,27 @@
   height: 40px;
 }
 
-.faq__item:nth-child(2n) {
+.faq__item:hover::after {
+  background-image: url("../img/open_hover.svg");
+}
+
+.faq__item:active::after {
+  background-image: url("../img/open_active.svg");
+}
+
+.faq__item:nth-child(even) {
   background-color: #440f51;
   color: #ffffff;
 }
 
 .faq__item:nth-child(odd):after {
   background-image: url("../img/open-purple.svg");
+}
+
+.faq__item:hover:nth-child(odd):after {
+  background-image: url("../img/open-purple_hover.svg");
+}
+
+.faq__item:active:nth-child(odd):after {
+  background-image: url("../img/open-purple_active.svg");
 }

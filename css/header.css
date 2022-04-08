@@ -23,3 +23,18 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+
+.header__btn:hover {
+  background-color: #6c0287;
+  border: 3px solid #6c0287;
+}
+
+.header__btn:focus {
+  background-color: #6c0287;
+  border: 3px solid #6c0287;
+}
+
+.header__btn:active {
+  background-color: #640aa3;
+  border: 3px solid #640aa3;
+}

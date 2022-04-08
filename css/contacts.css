@@ -55,6 +55,19 @@
   height: 50px;
 }
 
+.social__img:hover {
+  fill: #eadeed;
+}
+
+.socials__link:focus .social__img {
+  fill: #eadeed;
+  outline: 1px solid #cd06ff;
+}
+
+.socials__link:active .social__img {
+  fill: #cd06ff;
+}
+
 .contacts__copyright {
   display: flex;
   justify-content: space-between;
