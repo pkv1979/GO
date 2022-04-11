@@ -75,18 +75,69 @@
 }
 
 .booking__console-text {
+  position: relative;
   display: block;
+  padding-left: 20px;
   margin-bottom: 20px;
   font-weight: 400;
   font-size: 22px;
 }
 
-.booking__console-radio:focus {
-  outline: 1px solid #cd06ff;
+.booking__console-radio:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
-.booking__console-check:focus {
-  outline: 1px solid #cd06ff;
+.booking__console-radio {
+  width: 0;
+  height: 0;
+}
+
+.booking__console-radio:focus:after,
+.booking__console-radio:checked:after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 4px;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #cd06ff;
+}
+
+.booking__console-check:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+}
+
+.booking__console-check {
+  width: 0;
+  height: 0;
+}
+
+.booking__console-check:focus:after,
+.booking__console-check:checked:after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #cd06ff;
 }
 
 .booking__select:focus,
