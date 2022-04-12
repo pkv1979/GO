@@ -49,11 +49,24 @@
   background-color: #ffffff;
   border-radius: 8px;
   cursor: pointer;
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms li;
+  -moz-transition: all 400ms li;
+  -ms-transition: all 400ms li;
+  -o-transition: all 400ms li;
 }
 
 .booking__halls-label:hover {
   background-color: #eadeed;
   border: 3px solid #640aa3;
+}
+
+.booking__radio-halls {
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms lin;
+  -moz-transition: all 400ms lin;
+  -ms-transition: all 400ms lin;
+  -o-transition: all 400ms lin;
 }
 
 .booking__radio-halls:checked + .booking__halls-label,
@@ -101,6 +114,16 @@
 .booking__console-radio {
   width: 0;
   height: 0;
+}
+
+.booking__console-radio:after,
+.booking__console-check:after {
+  content: "";
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  -ms-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
 }
 
 .booking__console-radio:focus:after,
@@ -156,6 +179,11 @@
   border: 3px solid #ffffff;
   border-radius: 10px;
   outline: none;
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  -ms-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
 }
 
 .booking__btn:hover {
@@ -188,6 +216,11 @@
   font-size: 18px;
   font-weight: 400;
   color: #211e1e;
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  -ms-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
 }
 
 .booking__select_width_100 {
@@ -208,4 +241,9 @@
 
 .booking__input {
   height: 47px;
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  -ms-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
 }

@@ -81,6 +81,11 @@
   text-transform: uppercase;
   background-color: #6c0287;
   border-radius: 10px;
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  -ms-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
 }
 
 .head__link:hover,
@@ -107,6 +112,11 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   z-index: 200;
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms lin;
+  -moz-transition: all 400ms lin;
+  -ms-transition: all 400ms lin;
+  -o-transition: all 400ms lin;
 }
 
 .head__link-down:hover {

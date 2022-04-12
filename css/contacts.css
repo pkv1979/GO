@@ -50,9 +50,22 @@
   flex-wrap: wrap;
 }
 
+.socials__link {
+  transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -moz-transition: all 500ms linear;
+  -ms-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+}
+
 .social__img {
   width: 50px;
   height: 50px;
+  transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -moz-transition: all 500ms linear;
+  -ms-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
 }
 
 .social__img:hover {

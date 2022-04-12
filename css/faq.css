@@ -26,6 +26,11 @@
   right: 40px;
   width: 40px;
   height: 40px;
+  transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -moz-transition: all 500ms linear;
+  -ms-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
 }
 
 .faq__item:hover::after {

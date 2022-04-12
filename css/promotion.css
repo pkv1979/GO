@@ -21,6 +21,19 @@
   font-size: 20px;
   line-height: 28px;
   background: transparent center center/cover no-repeat;
+  transition: transform 400ms linear;
+  -webkit-transition: transform 400ms linear;
+  -moz-transition: transform 400ms linear;
+  -ms-transition: transform 400ms linear;
+  -o-transition: transform 400ms linear;
+}
+
+.promotion__item:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 .promotion__item_padding-bottom_6 {
