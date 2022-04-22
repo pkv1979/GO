@@ -1,6 +1,6 @@
 .booking {
   padding: 80px 0;
-  background-color: #440f51;
+  background-color: var(--faq-background);
 }
 
 .booking__title {
@@ -45,37 +45,37 @@
   height: 55px;
   font-size: 30px;
   text-transform: uppercase;
-  color: #000000;
-  background-color: #ffffff;
+  color: var(--secondary-color);
+  background-color: var(--main-color);
   border-radius: 8px;
   cursor: pointer;
   transition: all 400ms linear;
-  -webkit-transition: all 400ms li;
-  -moz-transition: all 400ms li;
-  -ms-transition: all 400ms li;
-  -o-transition: all 400ms li;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  -ms-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
 }
 
 .booking__halls-label:hover {
-  background-color: #eadeed;
-  border: 3px solid #640aa3;
+  background-color: var(--booking-background);
+  border: 3px solid var(--violet-active);
 }
 
 .booking__radio-halls {
   transition: all 400ms linear;
-  -webkit-transition: all 400ms lin;
-  -moz-transition: all 400ms lin;
-  -ms-transition: all 400ms lin;
-  -o-transition: all 400ms lin;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  -ms-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
 }
 
 .booking__radio-halls:checked + .booking__halls-label,
 .booking__radio-halls:active + .booking__halls-label {
-  background-color: #eadeed;
+  background-color: var(--booking-background);
 }
 
 .booking__radio-label:focus + .booking__halls-label {
-  border: 3px solid #640aa3;
+  border: 3px solid var(--violet-active);
 }
 
 .booking__form-group {
@@ -103,7 +103,7 @@
   top: 5px;
   width: 15px;
   height: 15px;
-  background-color: #ffffff;
+  background-color: var(--main-color);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -134,7 +134,7 @@
   top: 4px;
   width: 17px;
   height: 17px;
-  border: 1px solid #cd06ff;
+  border: 1px solid var(--violet-color);
 }
 
 .booking__console-check:before {
@@ -144,7 +144,7 @@
   top: 5px;
   width: 15px;
   height: 15px;
-  background-color: #ffffff;
+  background-color: var(--main-color);
 }
 
 .booking__console-check {
@@ -160,12 +160,12 @@
   top: 2px;
   width: 20px;
   height: 20px;
-  border: 1px solid #cd06ff;
+  border: 1px solid var(--violet-color);
 }
 
 .booking__select:focus,
 .booking__input:focus {
-  outline: 2px solid #cd06ff;
+  outline: 2px solid var(--violet-color);
 }
 
 .booking__btn {
@@ -174,9 +174,9 @@
   padding: 16px 50px;
   font-size: 22px;
   text-transform: uppercase;
-  color: #6c0287;
-  background: #ffffff;
-  border: 3px solid #ffffff;
+  color: var(--violet-background);
+  background: var(--main-color);
+  border: 3px solid var(--main-color);
   border-radius: 10px;
   outline: none;
   transition: all 400ms linear;
@@ -187,17 +187,17 @@
 }
 
 .booking__btn:hover {
-  background: #eadeed;
-  border: 3px solid #6c0287;
+  background: var(--booking-background);
+  border: 3px solid var(--violet-background);
 }
 
 .booking__btn:active {
-  background: #eadeed;
-  border: 3px solid #eadeed;
+  background: var(--booking-background);
+  border: 3px solid var(--booking-background);
 }
 
 .booking__btn:focus {
-  border: 3px solid #6c0287;
+  border: 3px solid var(--violet-background);
 }
 
 .booking__form-group_flex {
@@ -215,7 +215,7 @@
   padding: 12px 20px;
   font-size: 18px;
   font-weight: 400;
-  color: #211e1e;
+  color: var(--booking-color);
   transition: all 400ms linear;
   -webkit-transition: all 400ms linear;
   -moz-transition: all 400ms linear;

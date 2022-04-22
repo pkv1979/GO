@@ -46,6 +46,6 @@
   font-size: 70px;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--main-color);
   text-decoration: none;
 }

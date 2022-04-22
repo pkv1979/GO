@@ -1,0 +1,18 @@
+:root {
+  --main-color: #ffffff;
+  --secondary-color: #000000;
+  --violet-color: #cd06ff;
+  --faq-color: #1c1a1a;
+  --booking-color: #211e1e;
+
+  --main-background: #1b1a1b;
+  --secondary-background: #370a37;
+  --violet-background: #6c0287;
+  --faq-background: #440f51;
+  --booking-background: #eadeed;
+
+  --violet-hover: #840aa3;
+  --violet-active: #640aa3;
+
+  --link-down_size: 97px;
+}

@@ -58,7 +58,7 @@
   font-weight: 900;
   font-size: 100px;
   line-height: 141px;
-  color: #cd06ff;
+  color: var(--violet-color);
 }
 
 .head__advantages-text {
@@ -72,14 +72,14 @@
   font-size: 75px;
   line-height: 106px;
   font-variant: small-caps;
-  color: #cd06ff;
+  color: var(--violet-color);
 }
 
 .head__link {
   padding: 25px 69px;
   font-size: 26px;
   text-transform: uppercase;
-  background-color: #6c0287;
+  background-color: var(--violet-background);
   border-radius: 10px;
   transition: all 400ms linear;
   -webkit-transition: all 400ms linear;
@@ -90,22 +90,22 @@
 
 .head__link:hover,
 .head__link:focus {
-  background-color: #840aa3;
+  background-color: var(--violet-hover);
 }
 
 .head__link:active {
-  background-color: #640aa3;
+  background-color: var(--violet-active);
 }
 
 .head__link-down {
   position: absolute;
   bottom: 90px;
-  left: calc(50% - 48px);
+  left: calc(50% - var(--link-down_size) / 2);
   display: block;
-  width: 97px;
-  height: 97px;
+  width: var(--link-down_size);
+  height: var(--link-down_size);
   background: url("../img/down.svg") center center no-repeat;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--main-color);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -113,21 +113,21 @@
   -o-border-radius: 50%;
   z-index: 200;
   transition: all 400ms linear;
-  -webkit-transition: all 400ms lin;
-  -moz-transition: all 400ms lin;
-  -ms-transition: all 400ms lin;
-  -o-transition: all 400ms lin;
+  -webkit-transition: all 400ms linear;
+  -moz-transition: all 400ms linear;
+  -ms-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
 }
 
 .head__link-down:hover {
-  background-color: #ffffff;
+  background-color: var(--main-color);
   background-image: url("../img/down_hover.svg");
 }
 
 .head__link-down:active {
-  background-color: #cd06ff;
+  background-color: var(--violet-color);
   background-image: url("../img/down.svg");
-  border: 1px solid #cd06ff;
+  border: 1px solid var(--violet-color);
 }
 
 .head__link-down:focus:before {
@@ -137,5 +137,5 @@
   height: 100px;
   left: -2px;
   top: -2px;
-  border: 1px solid #cd06ff;
+  border: 1px solid var(--violet-color);
 }

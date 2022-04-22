@@ -1,3 +1,7 @@
+.promotion {
+  padding-bottom: 120px;
+}
+
 .promotion__title {
   margin-bottom: 41px;
   font-size: 40px;
@@ -37,6 +41,8 @@
 }
 
 .promotion__item_padding-bottom_6 {
+  position: relative;
+  top: 70px;
   padding-bottom: 6px;
 }
 

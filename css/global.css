@@ -17,8 +17,8 @@ body {
   font-size: 24px;
   font-weight: 700;
   font-style: normal;
-  color: #ffffff;
-  background-color: #1b1a1b;
+  color: var(--main-color);
+  background-color: var(--main-background);
 }
 
 img {

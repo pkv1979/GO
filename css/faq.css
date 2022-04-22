@@ -11,8 +11,8 @@
 }
 
 .faq__item {
-  background-color: #ffffff;
-  color: #1c1a1a;
+  background-color: var(--main-color);
+  color: var(--faq-color);
   font-weight: 700;
   font-size: 24px;
   padding: 30px 70px;
@@ -42,8 +42,8 @@
 }
 
 .faq__item:nth-child(even) {
-  background-color: #440f51;
-  color: #ffffff;
+  background-color: var(--faq-background);
+  color: var(--main-color);
 }
 
 .faq__item:nth-child(odd):after {

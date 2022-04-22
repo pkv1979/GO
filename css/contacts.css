@@ -1,6 +1,10 @@
 .contacts {
   padding-bottom: 20px;
-  background-image: linear-gradient(180deg, #1b1a1b -13.35%, #370a37 86.65%);
+  background-image: linear-gradient(
+    180deg,
+    var(--main-background) -13.35%,
+    var(--secondary-background) 86.65%
+  );
 }
 
 .contacts__title {
@@ -74,11 +78,11 @@
 
 .socials__link:focus .social__img {
   fill: #eadeed;
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--violet-color);
 }
 
 .socials__link:active .social__img {
-  fill: #cd06ff;
+  fill: var(--violet-color);
 }
 
 .contacts__copyright {
