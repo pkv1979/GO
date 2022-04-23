@@ -14,5 +14,8 @@
   --violet-hover: #840aa3;
   --violet-active: #640aa3;
 
+  --gradient-from: rgba(196, 196, 196, 0);
+  --gradient-to: rgba(108, 2, 135, 0.5);
+
   --link-down_size: 97px;
 }

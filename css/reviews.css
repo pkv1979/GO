@@ -20,8 +20,33 @@
 }
 
 .reviews__image {
+  position: relative;
   margin-bottom: 11px;
-  max-width: 280px;
+  width: 280px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.reviews__image:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    var(--gradient-from) 0%,
+    var(--gradient-to) 100%
+  );
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .reviews__author {
