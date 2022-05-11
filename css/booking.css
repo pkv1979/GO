@@ -207,7 +207,7 @@
 }
 
 .booking__form-group_padding_top {
-  padding-top: 14px;
+  padding-top: 30px;
 }
 
 .booking__select {
@@ -228,7 +228,7 @@
 }
 
 .booking__input-group {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .booking__input-group:last-child {
@@ -236,11 +236,11 @@
 }
 
 .booking__input-label {
-  display: block;
   font-size: 14px;
 }
 
 .booking__input {
+  width: 100%;
   height: 47px;
   transition: all 400ms linear;
   -webkit-transition: all 400ms linear;
